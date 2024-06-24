@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --text-color: #D9CA76;
+    --main-color: #0E2E4A;
+}
+body{
+    background: #0E2E4A;
+    color: #88ADBB;
+  
+}
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    margin-top:  20px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 45px;
+    color: #F3EAC6;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing:  5px;
+    animation: slideRight 1s ease forwards;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 30px;
+    color: #D9CA76;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 50px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .3s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.navbar a:hover{
+    background-color:#D9CA76;
+    color: #105672;
+    box-shadow: 0 0 20px #D9CA76 ;
+}
+
+.home{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10% 0;
+    color: #D9CA76;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .15s;
+    
+}
+
+.home-content h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #D9CA76; /* Color for the h3 text */
+    opacity: 0;
+    animation: zoomIn 1s ease forwards;
+    animation-delay: 0s;
+}
+
+.home-content .multiple-text {
+    animation-delay: .10s;
+    color: #1ba0d4; /* Color for the content within the element with class "multiple-text" inside "home-content" */
+}
+
+.home-content p{
+    font-size: 20px;
+    color: #b8c1ec;
+    margin: 10px 0 10px;
+    animation: showUp 1.5s ease forwards;
+    animation-delay: 0s;
+}
+
+.home-img img{
+   
+    
+    display: inline-flex;
+    max-width: 700px;
+    margin-right: -50px;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 0;
+}
+
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    border: 2px solid #D9CA76;
+    border-radius: 50%;
+    font-size: 25px;
+    color: #D9CA76;
+    text-decoration: none;
+    margin: 25px 15px 50px 0;
+    transition: all .2s ease;   
+    position: relative;
+    opacity: 0;
+    animation: slideTop .6s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+.social-media{
+    z-index: 1;
+    color: #D9CA76;
+}
+
+.social-media:after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    background: #d9ca76;
+    transition: all 0.3s ease;
+}
+
+.social-media a:hover{
+    background-color: #D9CA76;
+    color: #105672;
+    box-shadow: 0 0 20px #D9CA76 ;
+}
+.social-media a:hover:after{
+    left: auto;
+    right: 0;
+    width: 100%;
+}
+
+.social-media a:active{
+    top: 2px;
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: #88adbb;
+    font-family: "Roboto", sans-serif;
+    font-weight: 550;
+    outline: none !important;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all .3s ease;
+    position: relative;
+    text-decoration: none;
+    font-size: 55px;
+    animation: popup 1.5s ease forwards;
+    
+}
+.btn {
+    z-index: 1;
+    
+    color: #d9ca76;
+}
+
+.btn:after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    background: #d9ca76;
+    transition: all 0.3s ease;
+}
+.btn:hover {
+
+    color: #105672;
+}
+
+.btn:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+}
+.btn:active{
+    top: 2px;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes showUp {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@keyframes popup {
+    0% {
+        transform: scale(1, 1);
+      }
+      50% {
+        transform: scale(1.5, 1.5);
+      }
+      100% {
+        transform: scale(1, 1);
+      }
+}
+@keyframes zoomIn {
+    0% {
+        transform: translateY(100%) scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(50%) scale(0.9);
+      }
+    100% {
+        transform: translateY(0%) scale(1);
+        opacity: 1;
+    }
+}
+#chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#chatbot-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #105672;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+#chatbot-icon i {
+    font-size: 30px;
+    color: #d9ca76;
+}
+
+#chatbot {
+    display: none;
+    width: 300px;
+    height: 400px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex-direction: column;
+    overflow: hidden;
+    transition: all 0.3 ease;
+    opacity: 0;
+}
+
+#chatbot.active {
+    display: flex;
+    opacity: 1;
+}
+
+#chatbot-header {
+    background-color: #105672;
+    color: #d9ca76;
+    padding: 10px;
+    padding-bottom: 0px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+#chatbot-close {
+    cursor: pointer;
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+
+#chatbot-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+
+}
+
+#chatbot-input-container {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #105672;
+    padding: 3px;
+}
+
+#chatbot-input {
+    flex: 1; /* Take remaining space */
+    padding: 5px;
+    border: none;
+    background-color: #fff; /* Adjust background color */
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 14px; /* Example: Adjust font size */
+   
+    
+}
+
+#chatbot-send {
+    padding: 1px 10px; /* Adjust padding as needed */
+    background-color: #105672;
+    color: #d9ca76;
+    border: none;
+    cursor: pointer;
+    margin-left: 2px; /* Add margin to separate from input */
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 20px;
+    font-size: 19px; /* Example: Adjust font size */
+    font-weight: 500;
+}
+
+#chatbot-send:hover {
+    background-color: #105672;
+}
+
+#faq-container {
+    text-align: center; /* center the FAQs */
+    color: #1ba0d4;
+  }
+  
+  #faq-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: column; /* change the flex direction to column */
+    align-items: center; /* center the list items vertically */
+  }
+  
+  .faq-button {
+    border: 1px solid #ccc; /* add a border to the buttons */
+    border-radius: 5px; /* add a rounded corner to the buttons */
+    padding: 1px 10px; /* reduce the padding to make the buttons smaller */
+    margin-bottom: 2px; /* add a margin between buttons */
+    cursor: pointer; /* change the cursor to a pointer on hover */
+    font-size: 0.8em; /* reduce the font size */
+  }
+  
+  .faq-button:hover {
+    background-color: #d9ca76; /* change the background color on hover */
+    border-color: #aaa; /* change the border color on hover */
+  }
+  
+  .faq-button:active {
+    background-color: #d9ca76; /* change the background color on active */
+    border-color: #999; /* change the border color on active */
+  }

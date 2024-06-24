@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:500&display=swap" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+        <!--Import Font Awesome Icon Font-->
+        <link
+           rel="stylesheet"
+           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+           integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
+           crossorigin="anonymous"/>
+
+        <link rel="stylesheet" href="style.css">
+     </head>
+
+    <body>
+        <header class="header">
+            <a href="index.html" class="logo">Peng</a>
+            <nav class="navbar">
+                <a href="#Home" style="--i:1;"class="active">Home</a>
+                <a href="#About" style="--i:2;">About</a>
+                <a href="#Projects" style="--i:3;">Projects</a>
+                <a href="#Contact" style="--i:4;">Contact</a>
+            </nav>
+        </header>
+        <section class="home"> 
+            <div class="home-content">
+                <h3>Hello!</h3>
+                <h1>I'm King Alagon.</h1>
+                <h3>And I'm a <span class="multiple-text"></span></h3>
+                <p>I  am a dedicated student with a passion for programming, 
+                    aspiring to make a significant mark in the world of technology
+                    through my portfolio of innovative projects. </p>
+            
+            <div class="social-media">
+                <a href="#" style="--i:1;"></style><i class='bx bxl-meta' ></i></a>
+                <a href="#" style="--i:2;"></style><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="#" style="--i:3;"></style><i class='bx bxl-twitter' ></i></a>
+                <a href="#" style="--i:4;"></style><i class='bx bxl-linkedin-square' ></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+            </div>  
+            <div class="home-img">
+                <img src="C:\All Files\File Folders\Peng\HTML\Pictures\test3.png" alt="">
+            </div>
+            
+            <div id="chatbot-container">
+                <div id="chatbot-icon">
+                    <i class='bx bx-paper-plane'></i>
+                </div>
+                <div id="chatbot">
+                    <div id="chatbot-header">
+                        King's Chat Bot
+                        <span id="chatbot-close">&times;</span>
+                    </div>
+                    <div id="faq-container" style="display: none;">
+                        <h3>FAQs:</h3>
+                        <ul id="faq-list">
+                            <li><button class="faq-button" data-faq="about">About King?</button></li>
+                            <li><button class="faq-button" data-faq="contact">How can I contact you?</button></li>
+                            <li><button class="faq-button" data-faq="background">Educational Background?</button></li>
+                        </ul>
+                    </div>
+                    <div id="chatbot-messages"></div>
+                    <div id="chatbot-input-container">
+                        <input type="text" id="chatbot-input" placeholder="Type your message...">
+                        <button id="chatbot-send">
+                            <i class='bx bx-paper-plane'></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+
+        </section>  
+
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+# Ignore virtual environment folder
+venv/
+# Ignore RASA model files
+models/
+# Ignore RASA training data and logs
+data/
+results/
+# Ignore RASA actions folder (if applicable)
+actions/
+# Ignore RASA configuration files
+credentials.yml
+endpoints.yml
+# Ignore IDE and editor files
+.vscode/
+.idea/
+# Ignore operating system generated files
+.DS_Store
+Thumbs.db
+# Ignore environment-specific files
+*.env
+# Ignore log files
+*.log
+# Ignore package-lock.json (for Node.js projects)
+package-lock.json
+# Ignore compiled Python bytecode
+*.pyc
+# Ignore user-specific files
+*.iml
+*.model filter=lfs diff=lfs merge=lfs -text
+*.tar.gz filter=lfs diff=lfs merge=lfs -text
+*.h5 filter=lfs diff=lfs merge=lfs -text
+*.csv filter=lfs diff=lfs merge=lfs -text
+*.json filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,40 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - ask_name
+  - ask_weather
+  - bot_challenge
+  - about
+  - contact
+  - background
+
+responses:
+  utter_about:
+    - text: "I am King Christopher Alagon, and I am 23 years Old."
+
+  utter_contact:
+    - text: "Here's how you can Contact me: Email: kingalagon23@gmail.com Phone Number: 09053183427"
+
+  utter_background:
+    - text: "A graduate of Bachelor of Science in Information Technology from the Philippine Women's College of Davao, brings a robust foundation in information technology to his professional endeavors."
+
+  utter_greet:
+    - text: "Hello!"
+
+  utter_goodbye:
+    - text: "Goodbye! Have a great day!"
+
+  utter_name:
+    - text: "You can call me Peng!"
+
+  utter_weather:
+    - text: "I'm sorry, I don't have real-time weather information. You might want to check a weather website or app for the most up-to-date forecast."
+
+  utter_iamabot:
+    - text: "I am a bot, powered by King."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
